@@ -1,0 +1,576 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: STANLEY - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+  	background-color: #ffffff;
+  	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #333;
+}
+
+h1 {
+	font-size: 35px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #1abc9c;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+.navbar {
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+
+.navbar-inverse {
+	padding-bottom: 70px;
+	padding-top: 70px;
+}
+
+.navbar-inverse {
+	background-color: #1abc9c;
+	border-color: #16a085;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: #222222;
+}
+
+.navbar-brand {
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+.navbar-inverse .navbar-toggle {
+	border-color: transparent;
+}
+
+.progress-bar-theme {
+  background-color: #1abc9c;
+}
+
+
+/* Helpers */
+
+.mt {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.pt {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.skills {
+  font-size: 1.55em;
+  font-weight: 400;
+}
+
+.star-light,
+.star-primary {
+  padding: 0;
+  border: none;
+  border-top: solid 3px;
+  text-align: center;
+  max-width: 250px;
+  margin: 15px auto 20px;
+}
+
+/* +++++ WRAP SECTIONS +++++ */
+
+#ww {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-color: #f2f2f2;
+}
+
+
+#footer {
+	background-color: #2f2f2f;
+	padding-top: 50px;
+	padding-bottom: 50px; 
+}
+
+#footer p {
+	color: white;
+}
+
+#footer h4 {
+	color: white;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+
+
+/* +++++ Color Wraps / Blog Page +++++ */
+
+#grey {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #f2f2f2;
+}
+
+#white {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #ffffff;
+}
+
+
+
+/* Blog Date*/
+bd {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #d2d2d2;
+	font-weight: 700;
+}
+
+/* Blog Author*/
+ba {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+/* Blog Quote */
+.bq {
+	font-size: 22px;
+	padding-top: 30px;
+}
+
+/* Blog Tags */
+bt {
+	font-size: 12px;
+}
+
+/* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
+/* Effects also are controled by hover.zoom.js */
+.zoom { 
+    display:block; 
+    position:relative; 
+    overflow:hidden; 
+    background:transparent url(../img/loader.gif) no-repeat center;
+}
+
+
+    .zoomOverlay {
+        position:absolute;
+        top:0; left:0;
+        bottom:0; right:0;
+        display:none;
+        background-image:url(../img/zoom.png);
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+
+.zoom2 {
+	opacity: 1;
+}
+
+.zoom2:hover {
+	opacity: 0.5;
+}
+
+/* glyphicon Configuration */
+
+.glyphicon {
+	font-size: 40px;
+	color: #1abc9c;
+}
+
+/*portfolio */
+
+.portfolio-blocks .section-heading {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50%;
+}
+
+.portfolio-blocks .section-heading h2 {
+    margin: 0 4em;
+}
+
+.grid .gutter-sizer {
+  width: 1%;
+}
+.grid .grid-item {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .grid .grid-item {
+    width: 32.333333333333333%;
+    padding: 0;
+    margin-bottom: 11px;
+  }
+}
+.grid .blog-card.grid-item {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .grid .blog-card.grid-item {
+    width: 49%;
+    padding: 0;
+    margin-bottom: 11px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .grid .blog-card.grid-item {
+    width: 32.333333333333333%;
+    padding: 0;
+    margin-bottom: 11px;
+  }
+}
+.grid .grid-item__width2 {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .grid .grid-item__width2 {
+    width: 65.6666666666666%;
+  }
+}
+.grid .grid-sizer {
+  opacity: 0;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .grid .grid-sizer {
+    width: 32.333333333333333%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .grid--wide {
+    margin-left: 0;
+  }
+}
+.grid--wide .gutter-sizer {
+  width: 0;
+}
+.grid--wide .grid-item {
+  margin-bottom: 0px;
+  padding: 0px 15px 0px 15px;
+}
+@media screen and (min-width: 768px) {
+  .grid--wide .grid-item {
+    width: 33.333333333333333%;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .grid--wide .grid-item__width2 {
+    width: 66.6666666666666%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .grid--wide .grid-sizer {
+    width: 33.333333333333333%;
+  }
+}
+
+.frame-block__header {
+  line-height: 60px;
+  margin-bottom: 35px;
+}
+@media screen and (min-width: 992px) {
+  .frame-block__header {
+    margin-bottom: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -90px;
+    left: 1px;
+    z-index: 3;
+  }
+}
+
+.frame-block--wide .frame-block__header {
+  left: 40px;
+}
+@media screen and (min-width: 992px) {
+  .frame-block--wide .frame-block__header {
+    margin-top: -140px;
+  }
+}
+.frame-block--wide .frame-block__header > span {
+  color: #1abc9c;
+}
+.portfolio-blocks__link {
+  display: block;
+  position: relative;
+}
+.portfolio-blocks__link:hover .portfolio-blocks__hover-block {
+  opacity:0.95;
+
+}
+.portfolio-blocks__image {
+  width: 100%;
+}
+
+.portfolio-blocks__link:hover .portfolio-blocks__hover-block {
+  opacity:0.95;
+
+}
+.portfolio-blocks__hover-block {
+  opacity: 0;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  bottom: 15px;
+  right: 15px;
+  text-align: center;
+  background: #1abc9c;
+  transition: opacity 0.75s;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-blocks__hover-block {
+    display: block;
+  }
+}
+.portfolio-blocks__hover-block:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.portfolio-blocks__hover-block--mod {
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+.portfolio-blocks__text-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  width: 90%;
+}
+
+#our-work-tile{
+ margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size:3em
+    }
+
+@media screen and (min-width: 992px) {
+  .portfolio-blocks__text {
+    font-size: 16px;
+  }
+}
+.portfolio-blocks__text--mod {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.4;
+  text-transform: lowercase;
+  color: white
+}
+@media screen and (min-width: 992px) {
+  .portfolio-blocks__text--mod {
+    font-size: 24px;
+  }
+
+  #our-work-tile{
+ margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size:3em
+    }
+}
+
+@media screen and (max-width: 745px) {
+
+  #our-work-tile{
+ margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size:3em
+    }
+}
+.portfolio-blocks__text-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  width: 90%;
+}
+.portfolio-blocks__heading {
+  padding-bottom: 7px;
+  margin-bottom: 14px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 2;
+  color: #ffffff;
+  font-weight: bold;
+  position: relative;
+}
+@media screen and (min-width: 992px) {
+  .portfolio-blocks__heading {
+    font-size: 24px;
+  }
+}
+.portfolio-blocks__heading--mod {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 992px) {
+  .portfolio-blocks__heading--mod {
+    font-size: 36px;
+  }
+}
+.portfolio-blocks__heading:after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background: #ffffff;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -30px;
+}
+
+/*portfolio model*/
+.portfolio-modal .modal-content {
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  min-height: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+.portfolio-modal .modal-content h2 {
+  margin: 0;
+  font-size: 3em;
+}
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px;
+}
+.portfolio-modal .modal-content .item-details {
+  margin: 30px 0;
+}
+.portfolio-modal .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+.portfolio-modal .close-modal .lr {
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background-color: #2C3E50;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+  z-index: 1051;
+}
+.portfolio-modal .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #2C3E50;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+  z-index: 1052;
+}
+.portfolio-modal .modal-backdrop {
+  opacity: 0;
+  display: none;
+}
